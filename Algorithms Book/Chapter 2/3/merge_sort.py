@@ -1,5 +1,11 @@
-def merge_sort(lst):
-    pass
+from math import floor
+
+def merge_sort(A, p, r):
+    if p < r:
+        q = floor((p+r)/2)
+        merge_sort(A,p,q)
+        merge_sort(A,q+1,r)
+        merge(A,p,q,r)
 
 def merge(lst,start,mid,end):
     length_one = mid - start
@@ -36,3 +42,5 @@ target2 = [1,2]
 actual2 = merge(lst2,0,1,1)
 print('actual2', actual2)
 print(target2 == actual2)
+
+# test cases for merge_sort:
