@@ -31,3 +31,8 @@ target = [1,2,2,3,4,5,6,7]
 actual = merge(lst,0,4,7)
 print(actual)
 print(target==actual)
+lst2 = [2,1]
+target2 = [1,2]
+actual2 = merge(lst2,0,1,1)
+print('actual2', actual2)
+print(target2 == actual2)
