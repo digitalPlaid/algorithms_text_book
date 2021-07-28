@@ -6,7 +6,7 @@
 // find smallest element, change with a[0], find next smallest, change with a[1]...
 // these algorithms are ones performed in place
 // not going to assume any native js functions
-
+/*
 function selectionSort(array) {
     // find smallest in whole array
     for (let i = 0; i < array.length-1; i++) {
@@ -33,3 +33,17 @@ if (JSON.stringify(expected) === JSON.stringify(actual)) {
 } else {
     console.log('failed')
 }
+
+// best case: theta(n^2)
+// worst case: theta(n^2)
+
+
+*/
+
+// exercise 2.2-3:
+// on average, half. it's uniformally distributed
+// worst case, every element is checked
+// theta(n) for both best and worst
+
+// exercise 2.2-4
+// write in checks for special cases that can be solved rapidly
