@@ -18,27 +18,19 @@ function merge(array, begin, midpoint, end) {
     for (let i=0; i < lengthTwo; i++) {
         right.push(array[midpoint+1+i]); // unsure of this index in particular
     }
-    console.log('starting left: ', left);
-    console.log('starting right: ', right);
     left.push(99999);
     right.push(99999); // using 99999 as our sentinel - I'm sure this would have to be bigger for a usable implementation
     let i = 0;
     let j = 0;
     for (let k=begin; k < end + 1; k++) {
-        console.log(`------- iteration ${k} -------`)
-        console.log('left: ', left);
-        console.log('right: ', right);
-        console.log('iteration begin target array: ', array);
+
         if (left[i] <= right[j]) {
-            console.log('chose from left');
             array[k] = left[i];
             i += 1;
         } else {
-            console.log('chose from right');
             array[k] = right[j];
             j += 1;
         }
-        console.log('iteration end target array: ', array)
     }
     return array;
 }
